@@ -1,6 +1,8 @@
 import os, requests
+from dotenv import load_dotenv
 
 
+load_dotenv()
 def token(request):
     if not "Authorization" in request.headers:
         return None, ("missing credentials", 401)
@@ -11,7 +13,7 @@ def token(request):
         return None, ("missing credentials", 401)
 
     response = requests.post(
-        f"http://{os.environ.get('AUTH_SVC_ADDRESS')}/validate",
+        f"http://{os.getenv('AUTH_SVC_ADDRESS')}/validate",
         headers={"Authorization": token},
     )
 

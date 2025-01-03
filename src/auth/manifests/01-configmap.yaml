@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: auth-configmap
+data:
+  SQLALCHEMY_DATABASE_URI: postgresql://webadmin:KFEofr33385@103.185.44.228/portalsekolah
+  DB_USERNAME: webadmin
+  DB_NAME: portalsekolah
+  DB_HOST: 103.185.44.228
+  
+
+  MYSQL_HOST: host.minikube.internal
+  MYSQL_USER: auth_user
+  MYSQL_DB: auth
+  MYSQL_PORT: "3306"

@@ -15,10 +15,11 @@ mccabe==0.6.1
 parso==0.8.3
 pika==1.2.0
 platformdirs==2.5.0
+python-dotenv==0.21.0
 pylint==2.12.2
 pymongo==4.0.1
 requests==2.27.1
 toml==0.10.2
 urllib3==1.26.8
 Werkzeug==2.0.3
-wrapt==1.13.3
+wrapt==1.11.0
